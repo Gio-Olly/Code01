@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modulo</title>
+    <style>
+        .form-field{
+            margin-bottom: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <ul>
+        <li><a href="home.html">home</a></li>
+        <li><a href="modulo.html">modulo</a></li>
+        <li><a href="tabella.html">tabella</a></li>
+    </ul>
+
+    <h1>Modulo</h1>
+    <form>
+        <fieldset>
+
+            <legend>Register</legend>
+
+            <div class="form-field">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" required>
+                <label for="cognome">Cognome</label>
+                <input type="text" name="cognome" required>
+            </div>
+
+            <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" name="email" required placeholder="inserisci la tua mail">
+            </div>
+
+            <div class="form-field">
+                <label for="password">Password</label>
+                <input type="password" required placeholder="inserisci la tua password">
+            </div>
+
+            <div class="form-field">
+                <label for="note">Note</label>
+                <textarea name="note"></textarea>
+            </div>  
+
+            <div class="form-field">
+                <span>Genere</span>
+                <div>
+                    <input type="radio" id="maschio" name="genere" value="maschio">
+                    <label for="maschio">Maschio</label>
+                </div>
+                <div>
+                    <input type="radio" id="femmina" name="genere" value="femmina">
+                    <label for="femmina">Femmina</label>
+                </div>
+            </div>
+            
+            <div class="form-field">
+                <label for="data-nascita">Data Nascita</label>
+                <input type="date" id="data-nascita" name="data-nascita">
+            </div>
+
+            <div class="form-field">
+                <label for="macchine">Macchina preferita</label>
+                <select name="Macchine" id="macchine">
+                    <option value="volvo">Volvo</option>
+                    <option value="audi">Audi</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="fiat">Fiat</option>
+                </select>
+            </div>
+
+            <div class="formfield">
+                <input type="checkbox" name="newsletter" id="newsletter">
+                <label for="newsletter">Iscriviti alla nostra newsletter</label>
+            </div>
+
+
+            <input type="submit" value="Invio">
+            <input type="reset" value="Resetta">
+        </fieldset>
+    </form>
+
+</body>
+</html>
